@@ -13,8 +13,6 @@ jobs:
         uses: actions/checkout@v2
       - name: Set up clickhouse
         uses: metrico/clickhouse-server-action@v1.0.0
-      - name: Dump docker logs
-        uses: jwalton/gh-docker-logs@v1
       - name: Set up Go 1.17
         uses: actions/setup-go@v2
         with:
@@ -22,3 +20,5 @@ jobs:
       - name: Run tests
         run: go test -v
         working-directory: test
+      - name: Dump docker logs
+        uses: jwalton/gh-docker-logs@v1
