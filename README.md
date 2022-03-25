@@ -1,12 +1,12 @@
 # ClickHouse GitHub Action
 
-This action sets up a ClickHouse.
+This action sets up a ClickHouse server instance.
 
 # Usage
 
 ```yaml
 steps:
-  - uses: metrico/clickhouse-udf-action@v1.0.0
+  - uses: metrico/clickhouse-server-action@v1.0.0
 ```
 
 # License
