@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 echo "Running UDF install script..."
 if [ -d "/user_scripts" ]; then
