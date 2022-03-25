@@ -10,4 +10,4 @@
 #############################################
 
 echo "Starting ClickHouse"
-docker run --name clickhouse -p 9000:9000 -p 8123:8123 -d clickhouse/clickhouse-server:latest-alpine
+docker run --name clickhouse -p 9000:9000 -p 8123:8123 -v /setup-udf.sh:/docker-entrypoint-initdb.d/setup-udf.sh -d clickhouse/clickhouse-server:latest-alpine
