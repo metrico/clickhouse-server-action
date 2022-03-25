@@ -1,12 +1,14 @@
 name: Tests
 
-on: [push, pull_request]
+on: [push]
 
 jobs:
   test:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Update Latest tag
+        uses: EndBug/latest-tag@v1.4.0
       - name: Set up Go 1.17
         uses: actions/setup-go@v2
         with:
@@ -18,5 +20,3 @@ jobs:
       - name: Run tests
         run: go test -v
         working-directory: test
-      - name: Update Latest tag
-        uses: EndBug/latest-tag@v1.4.0
