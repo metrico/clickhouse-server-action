@@ -10,11 +10,11 @@ steps:
   - uses: metrico/clickhouse-server-action@latest
 ```
 
-## UDF
-Mount UDF Functions and Binaries using custom paths:
+## UDF _(experimental)_
+Mount UDF XML Functions and Binaries using custom paths:
 ```
   - env:
-      UDF_BIN_PATH: /user_scripts
+      UDF_BIN_PATH=/user_scripts
       UDF_XML_PATH=/user_functions
 ```
 
