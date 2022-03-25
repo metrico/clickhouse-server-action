@@ -1,5 +1,5 @@
-name: 'ClickHouse in GitHub Actions'
-description: 'Start the latest Clickhouse'
+name: 'ClickHouse Server Action'
+description: 'Provides the latest clickhouse-server'
 
 branding:
   icon: 'database'
