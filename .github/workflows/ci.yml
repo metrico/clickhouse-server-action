@@ -11,10 +11,8 @@ jobs:
     steps:
       - name: Check out code
         uses: actions/checkout@v2
-      - name: Update Latest tag
-        uses: EndBug/latest-tag@v1.4.0
       - name: Set up clickhouse
-        uses: metrico/clickhouse-server-action@latest
+        uses: metrico/clickhouse-server-action@v1.0.0
       - name: Set up Go 1.17
         uses: actions/setup-go@v2
         with:
