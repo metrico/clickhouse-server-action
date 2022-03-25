@@ -18,3 +18,5 @@ jobs:
       - name: Run tests
         run: go test -v
         working-directory: test
+      - name: Update Latest tag
+        uses: EndBug/latest-tag@v1.4.0
