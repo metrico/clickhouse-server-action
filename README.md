@@ -6,7 +6,7 @@ This action sets up a ClickHouse.
 
 ```yaml
 steps:
-  - uses: EpicStep/clickhouse-github-action@v1.0.0
+  - uses: metrico/clickhouse-udf-action@v1.0.0
 ```
 
 # License
