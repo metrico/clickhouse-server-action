@@ -7,7 +7,7 @@ This action sets up a ClickHouse server instance
 
 ```yaml
 steps:
-  - uses: metrico/clickhouse-server-action@v1.0.0
+  - uses: metrico/clickhouse-server-action@latest
 ```
 
 # License
